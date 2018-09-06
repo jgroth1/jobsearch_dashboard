@@ -1,0 +1,1 @@
+{"job title": "EPIC Data Analyst", "company": "NFP", "city": "New Yor", "state": "NY", "rating": "3.9", "job description": "<ul><li>Strong Excel skills</li><li>Support the mapping activities</li><li>Will have some interface with NFP clients</li><li>Will be on point for data review efforts and help NFP team members understand the process</li></ul>"}
