@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>DataDash</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://bootswatch.com/4/superhero/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <style type="text/css">
+      .bg-cover {
+          background-image: url('assets/img/finish_line_sm.png'); 
+      }
+  </style>
+  </head>
+<body>
+  <div class="jumbotron jumbotron bg-cover text-center" >
+    <div class="overlay"></div>
+    <div class="container">
+    <p class="lead">
+           <!-- REMOVE BUTTON IF NOT NECESSARY ON THIS PAGE>
+      <a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a>
+    < END SCRAPER BUTTON -->
+  </p>
+    </p>
+    </div>
+  </div>
+  <div>
+      <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <!--li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Menu</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="jobs.html">Job Description</a>
+              <a class="dropdown-item" href="location.html">Location</a>
+              <a class="dropdown-item" href="skills.html">Skills</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="analysis.html">Analysis</a>
+            </div>
+          </li-->
+          <li class="nav-item">
+              <a class="nav-link active" href="#">Analysis</a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
+    </div>
+    <div class="jumbotron">
+        <h1 class="display-3">Analysis Heading</h1>
+        <p class="lead"><b>Paragraph</b></p>
+        <hr class="my-4">
+    </div>
+    <!-- Insert Analysis Plots !IMPORTANT: Use plots.js-->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <div id="plot"></div>
+
+  <script src="plots.js"></script>
+
+  <select id="selDataset" onchange="getData(this.value)">
+    <option value="dataset1">Job Description</option>
+    <option value="dataset2">Location</option>
+    <option value="dataset3">Skills</option>
+  </select>
+
+  <!-- Use below if adding other plots to this page>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+    <script src="static/js/data.js"></script>
+    <script src="static/js/app.js"></script>
+  <END COMMENT-->
+    <div>
+        <footer class="footer" style="padding-top: 30px">
+          <span class="bottom">The information presented here was created for educational purposes only.</span>
+        </footer>
+      </div>
+  
+  </body>
+  
+</html>
