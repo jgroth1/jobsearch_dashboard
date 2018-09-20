@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>DataDash</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://bootswatch.com/4/superhero/bootstrap.css">
+      <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+      <link rel="stylesheet" href="../static/style.css">
+      <style type="text/css">
+        .bg-cover {
+              background-image: url('../static/finish_line_sm.png');
+              background-repeat: repeat-x;
+        }
+      </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+
+  <!--div class="container w-100"-->
+    <div class="jumbotron jumbotron bg-cover" >
+      <div class="overlay">
+      </div>
+    </div>
+  </div>
+
+  <div>
+      <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="analysis.html">Analysis</a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
+    </div>
+    <div class="jumbotron">
+        <h1 class="display-3">DataDash</h1>
+        <p class="lead"><b>getting your data science career to the finish line</b></p>
+        <hr class="my-4">
+        <p></p>
+        <p class="lead">
+        </p>
+      </div>
+    <div>
+        <form accept-charset="UTF-8" action="" method="POST" style="max-width: 450px; padding-left: 10px; padding-bottom: 30px">
+          <fieldset >
+            <textarea class="form-control" id="text" name="text" placeholder="Paste the text of your resume" rows="5"></textarea>
+            <h6 class="pull-right" id="count_message"></h6>
+            <button class="btn btn-info" type="submit">Analyze</button>
+          </fieldset>
+        </form>
+    </div>
+    <!-- Use below scripts if adding other plots to this page>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+    <script src="static/js/data.js"></script>
+    <script src="static/js/index.js"></script>
+    < END COMMENT -->
+    <div>
+        <footer class="footer">
+            <span class="bottom">The information presented here was created for educational purposes only.</span>
+        </footer>
+    </div>
+  </body>
+  
+</html>
