@@ -40,17 +40,17 @@ Base.prepare(db.engine, reflect=True)
 
 Data_engineer = Base.classes.Data_engineer
 
-@app.route("/")
+@app.route("/index.html")
 def index():
     """Return the homepage."""
     return render_template("index.html")
 
-@app.route("/")
+@app.route("/analysis.html")
 def analysis():
     """Return the analysis page."""
     return render_template("analysis.html")
 
-    @app.route("/")
+@app.route("/about.html")
 
 def about():
     """Return the about page."""
@@ -58,7 +58,7 @@ def about():
 
 @app.route("/engineer")
 def names():
-    """Return a list of jb descriptions."""
+    """Return a list of job descriptions."""
 
     # Use Pandas to perform the sql query
     stmt = db.session.query(Data_engineer).statement
