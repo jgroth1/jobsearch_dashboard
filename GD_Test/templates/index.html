@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>DataDash</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://bootswatch.com/4/superhero/bootstrap.css">
+      <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+      <!--<link rel="stylesheet" href="../static/style.css"> -->
+      <style type="text/css">
+        .bg-cover {
+              background-image: url('../static/finish_line_sm.png');
+              background-repeat: repeat-x;
+        }
+      </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+
+  <!--div class="container w-100"-->
+    <div class="jumbotron jumbotron bg-cover" >
+      <div class="overlay">
+      </div>
+    </div>
+  </div>
+
+  <div>
+      <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link active" href="{{url_for('index')}}">Home</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="{{url_for('analysis')}}">Analysis</a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{url_for('about')}}">About</a>
+          </li>
+        </ul>
+    </div>
+    <div class="jumbotron">
+        <h1 class="display-3">DataDash</h1>
+<p class="lead"><b>getting your data science career to the finish
+line</b>
+ <p>DataDash is an interactive dashboard that connects those seeking careers in data with the career that best matches their skills while providing insight on specific categories of data careers.</p></p>
+<hr class="my-4">
+<p><iframe width="100%" height="520" frameborder="0" src=
+"https://jstratton.carto.com/builder/e7828ebc-404c-4bdc-a692-64a80798eb34/embed"
+allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""
+oallowfullscreen="" msallowfullscreen=""></iframe></p>
+<p class="lead"></p>
+
+</div>
+<div class = "container" >
+ <img style="height: 100%; width: 100%; display: block;" src= "../static/dendroid.jpg" alt="">
+</div>
+<div class="jumbotron">
+</div>
+<div class = "container-fluid">
+<form accept-charset="UTF-8" action="" method="post" style=
+"max-width: 450px; padding-left: 10px; padding-bottom: 30px">
+<fieldset>
+<textarea class="form-control" id="text" name="text" placeholder=
+"Paste the text of your resume" rows="5">
+</textarea>
+<p class="lead"><b>Copy and Paste the text of your resume here to get matched!</b>
+<h6 class="pull-right" id="count_message"></h6>
+<button class="btn btn-info" type=
+"submit">DataDash!</button></fieldset>
+</form>
+</div>
+<!-- Use below scripts if adding other plots to this page>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+    <script src="static/js/data.js"></script>
+    <script src="static/js/index.js"></script>
+    < END COMMENT -->
+<div>
+<footer>
+  <p class="text-muted ">The information
+presented here was created for educational purposes
+only.
+  </p>
+</footer>
+</div>
+</body>
+</html>
